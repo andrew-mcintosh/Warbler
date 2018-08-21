@@ -6,7 +6,7 @@ const { createMessage } = require("../handlers/messages");
 router.route("/").post(createMessage);
 router
     .route("/:message_id")
-    .get(getMessage);
+    .get(getMessage)
     .delete(deleteMessage);
     
 module.exports = router;
